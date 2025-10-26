@@ -113,10 +113,26 @@ def call_ai_agent(text):
 
 # Player sorting now handled by AI
 
+# Field name mappings for display (abbreviated headers)
+FIELD_DISPLAY_NAMES = {
+    'number': 'No.',
+    'name': 'Name',
+    'position': 'Pos.',
+    'height': 'Ht.',
+    'weight': 'Wt.',
+    'year': 'Yr.'
+}
+
+def get_field_display_name(field):
+    """Get the abbreviated display name for a field"""
+    return FIELD_DISPLAY_NAMES.get(field, field.title())
+
 def make_indesign_tagged_roster(players, coaches, fields):
     """Generate InDesign tagged text format for rosters"""
     result = ["<ASCII-MAC>\n"]
-    result.append("<ParaStyle:Table Header>" + "\t".join(f.title() for f in fields) + "\n")
+    # Use abbreviated field names for headers
+    display_headers = [get_field_display_name(f) for f in fields]
+    result.append("<ParaStyle:Table Header>" + "\t".join(display_headers) + "\n")
     
     for p in players:
         row = [str(p.get(f, "")) for f in fields]
