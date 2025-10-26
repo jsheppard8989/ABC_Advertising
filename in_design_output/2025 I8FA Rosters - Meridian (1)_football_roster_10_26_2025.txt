@@ -1,0 +1,33 @@
+<ASCII-MAC>
+<ParaStyle:Table Header>No.	Name	Pos.	Ht.	Wt.
+<ParaStyle:Table Row>1	Joe Stortrich	WR/DB	5'9	145
+<ParaStyle:Table Row>5	Cam Dean	RB/LB	5'10	165
+<ParaStyle:Table Row>8	Colt Green	QB/DB	5'7	135
+<ParaStyle:Table Row>9	Bryce Brown	QB/DB	6'3	160
+<ParaStyle:Table Row>10	Draven Anderson	RB/LB	5'10	160
+<ParaStyle:Table Row>11	Terry O'Laughlin	WR/DB	5'9	145
+<ParaStyle:Table Row>12	Ethan Long	QB/DB	6'0	150
+<ParaStyle:Table Row>13	Seth Ralston	WR/LB	6'2	195
+<ParaStyle:Table Row>14	Jason O'Laughlin	WR/DB	5'7	130
+<ParaStyle:Table Row>16	Christian Stevens	RB/DB	5'7	140
+<ParaStyle:Table Row>21	Maxwell Hubner	WR/LB	5'10	165
+<ParaStyle:Table Row>22	Alex Hudson	RB/LB	5'7	160
+<ParaStyle:Table Row>27	Trenton Dowdy	WR/DB	6'0	180
+<ParaStyle:Table Row>34	Wyatt Martin	WR/DB	5'7	150
+<ParaStyle:Table Row>35	Jaren Lawson	WR/DB	6'0	150
+<ParaStyle:Table Row>42	Tucker Hedges	WR/DB	5'7	135
+<ParaStyle:Table Row>51	Isaac Hanson	OL/DL	5'11	200
+<ParaStyle:Table Row>54	Will Parton	OL/DL	5'9	205
+<ParaStyle:Table Row>55	Landon Southerland	OL/DL	5'7	235
+<ParaStyle:Table Row>56	Kylin Morris	OL/DL	6'0	205
+<ParaStyle:Table Row>58	Logan Lott	OL/DL	6'1	250
+<ParaStyle:Table Row>59	Dom Chumbley	OL/DL	5'10	185
+<ParaStyle:Table Row>67	Austin Merritt	OL/LB	6'0	220
+<ParaStyle:Table Row>75	Cam Long	OL/DL	5'9	225
+<ParaStyle:Table Row>82	Isaac Hunt	OL/DL	6'2	195
+<ParaStyle:Table Row>84	Ted Jones	WR/DB	6'2	195
+<ParaStyle:Table Row>86	Chris Gotts	WR/DB	5'11	145
+
+<ParaStyle:Coach Header>Coaches
+<ParaStyle:Coach Row>Head Coach Kyle Sparks
+<ParaStyle:Coach Row>Assistant Coaches Riley Allen, Zach Allen, Bill Miller, Ed Long

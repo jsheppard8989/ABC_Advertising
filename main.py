@@ -16,7 +16,7 @@ load_dotenv()
 openai.api_key = os.getenv("OPENAI_API_KEY")
 
 # Constants for efficiency
-SUPPORTED_IMAGE_EXTS = {'.png', '.jpg', '.jpeg', '.bmp', '.tiff', '.gif'}
+SUPPORTED_IMAGE_EXTS = {}  # Images not directly supported - convert to PDF first
 AI_PROMPT_TEMPLATE = (
     "CRITICAL: Transfer data accurately from the source text. Do not modify opponent names, dates, or times unless specifically instructed. "
     "Analyze this text and determine if it contains roster data or schedule data. Return JSON with 'type' field ('roster' or 'schedule') and appropriate data structure. "
@@ -181,6 +181,7 @@ def make_indesign_tagged_schedule(games, fields):
     
     return ''.join(result)
 
+
 def extract_text_from_image(image_path):
     """Extract text from an image file using OCR"""
     if not HAS_IMAGE_SUPPORT:
@@ -213,11 +214,12 @@ def process_single_file(file_path, output_folder):
             with pdfplumber.open(file_path) as pdf:
                 text = "\n".join(page.extract_text() or "" for page in pdf.pages)
         elif file_ext in SUPPORTED_IMAGE_EXTS:
-            print(f"🖼️  Processing image: {file_path.name}")
-            text = extract_text_from_image(file_path)
-            if not text.strip():
-                print(f"⚠️  Could not extract text from image. Make sure tesseract is installed.")
-                return [], False
+            print(f"⚠️  Image files (PNG, JPG, etc.) are not directly supported.")
+            print(f"   Please convert the image to PDF first using:")
+            print(f"   - Preview (macOS): Open image → File → Export as PDF")
+            print(f"   - Online converter")
+            print(f"   Then process the PDF file.")
+            return [], False
         else:
             print(f"⚠️  Unsupported file type: {file_ext}")
             return [], False
